@@ -1,0 +1,10 @@
+apply plugin: 'java'
+
+dependencies{
+    compile spec.apache.httpcomponents.httpclient;
+    compile spec.newsoftvalley.myserver.dataTemplate
+    compile spec.newsoftvalley.myserver.restClient
+    compile spec.linkedin.pegasus.r2core
+    compile spec.linkedin.pegasus.restliClient
+    compile 'com.linkedin.pegasus:restli-server:' + pegasusVersion;
+}

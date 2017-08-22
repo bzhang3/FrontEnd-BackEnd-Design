@@ -1,0 +1,17 @@
+
+apply plugin: 'war'
+
+war.archiveName "myserver-backend.war"                // gradle build
+
+project.archivesBaseName = "myserver-backend"         // gradle install
+
+dependencies {
+    // RestliServlet or HttpRequestHandlerServlet, choose either one
+    compile spec.linkedin.pegasus.restliServer
+    compile spec.eclipse.jetty.jettyServer
+    compile spec.eclipse.jetty.webServer
+
+
+    compile project(':myserver:rest-impl')
+
+}

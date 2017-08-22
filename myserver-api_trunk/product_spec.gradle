@@ -1,0 +1,48 @@
+ext.spec = [
+        'linkedin' : [
+                'pegasus' : [
+                        'r2core' : 'com.linkedin.pegasus:r2:' + pegasusVersion,
+                        'restliClient' : 'com.linkedin.pegasus:restli-client:' + pegasusVersion
+                ]
+        ],
+        'apache': [
+                'httpcomponents': [
+                        'httpclient': 'org.apache.httpcomponents:httpclient:' + httpcomponentsVersion
+                ]
+        ],
+        'testng': [
+                'testng': 'org.testng:testng:' + testngVersion
+
+        ],
+        'eclipse' : [
+                'jetty' : [
+                        'jettyServer' : 'org.eclipse.jetty:jetty-server:' + jettyVersion,
+                        'webServer' : 'org.eclipse.jetty:jetty-webapp:' + webVersion
+                ]
+        ],
+
+        'fasterxml': [
+                'jackson': [
+                        'core': [
+                                'jacksoncore': 'com.fasterxml.jackson.core:jackson-core:' +
+                                        jacksoncoreVersion,
+                                'jacksondatabind': 'com.fasterxml.jackson.core:jackson-databind:' +
+                                        jacksondatabindVersion,
+                                'jacksonannotations': 'com.fasterxml.jackson.core:jackson-annotations:' +
+                                        jacksonannotationsVersion
+                        ]
+
+                ]
+        ],
+
+        'newsoftvalley': [
+                'myserver': [
+                        'dataTemplate' : 'com.newsoftvalley.myserver:myserver-data-template:' + myserverVersion,
+                        'restClient' : 'com.newsoftvalley.myserver:myserver-rest-client:' + myserverVersion
+                ]
+        ]
+
+
+        //compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.0'
+        //compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.0'
+]

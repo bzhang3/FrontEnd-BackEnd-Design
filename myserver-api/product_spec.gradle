@@ -1,0 +1,24 @@
+ext.spec = [
+        'linkedin' : [
+                'pegasus' : [
+                        'data' : 'com.linkedin.pegasus:data:' + pegasusVersion,
+                        'restliServer' : 'com.linkedin.pegasus:restli-server:' + pegasusVersion,
+                        'restliCommon' : 'com.linkedin.pegasus:restli-common:' + pegasusVersion,
+                        'restClient' : 'com.linkedin.pegasus:restli-client:' + pegasusVersion
+                ]
+        ],
+
+        'eclipse' : [
+                'jetty' : [
+                        'jettyServer' : 'org.eclipse.jetty:jetty-server:' + jettyVersion,
+                        'webServer' : 'org.eclipse.jetty:jetty-webapp:' + webVersion
+                ]
+        ],
+//        'javax' : [
+//                'servlet' : [
+//                        'servletApi' : 'javax.servlet:javax.servlet-api:' + servletVersion
+//                ]
+//        ]
+
+
+]

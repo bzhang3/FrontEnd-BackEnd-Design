@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="myserver-api-inteTest_main" target="1.8" />
+      <module name="myserver-api-inteTest_test" target="1.8" />
+      <module name="myserver-api_integTest_main" target="1.8" />
+      <module name="myserver-api_integTest_test" target="1.8" />
+      <module name="myserver-api_main" target="1.8" />
+      <module name="myserver-api_test" target="1.8" />
+      <module name="myserver-api_trunk_main" target="1.8" />
+      <module name="myserver-api_trunk_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

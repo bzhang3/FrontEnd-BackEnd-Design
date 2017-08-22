@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+dependencies{
+
+    compile spec.apache.httpcomponents.httpclient;
+    testCompile spec.testng.testng;
+    compile spec.fasterxml.jackson.core.jacksoncore;
+    compile spec.fasterxml.jackson.core.jacksonannotations;
+    compile spec.fasterxml.jackson.core.jacksondatabind;
+    compile spec.linkedin.pegasus.r2core
+    compile spec.linkedin.pegasus.restliClient
+    compile spec.newsoftvalley.myserver.dataTemplate
+    compile spec.newsoftvalley.myserver.restClient
+
+}

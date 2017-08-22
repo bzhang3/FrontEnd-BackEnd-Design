@@ -1,0 +1,8 @@
+rootProject.name = 'myserver-api'
+include 'myserver'
+include ':myserver:listener'
+include ':myserver:rest-client'
+include ':myserver:rest-api'
+include ':myserver:rest-impl'
+include ':myserver:myserver-frontend-war'
+

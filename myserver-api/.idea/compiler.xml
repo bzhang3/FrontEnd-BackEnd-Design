@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="myserver-api_main" target="1.8" />
+      <module name="myserver-api_test" target="1.8" />
+      <module name="myserver-frontend-war_main" target="1.8" />
+      <module name="myserver-frontend-war_test" target="1.8" />
+      <module name="myserver_main" target="1.8" />
+      <module name="myserver_mainGeneratedDataTemplate" target="1.8" />
+      <module name="myserver_test" target="1.8" />
+      <module name="myserver_testGeneratedDataTemplate" target="1.8" />
+      <module name="rest-api_main" target="1.8" />
+      <module name="rest-api_mainGeneratedDataTemplate" target="1.8" />
+      <module name="rest-api_test" target="1.8" />
+      <module name="rest-api_testGeneratedDataTemplate" target="1.8" />
+      <module name="rest-impl_main" target="1.8" />
+      <module name="rest-impl_mainGeneratedDataTemplate" target="1.8" />
+      <module name="rest-impl_test" target="1.8" />
+      <module name="rest-impl_testGeneratedDataTemplate" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
