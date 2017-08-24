@@ -6,10 +6,13 @@ import com.linkedin.restli.server.CreateResponse;
 import com.linkedin.restli.server.UpdateResponse;
 import jdk.nashorn.internal.runtime.ECMAException;
 import nam.e.spa.ce.Abc;
+import org.springframework.stereotype.Component;
+
 
 /**
  * Created by bingzhang on 8/21/17.
  */
+@Component("R2ClientService")
 public class R2ClientService {
     private R2Client _r2Client;
 

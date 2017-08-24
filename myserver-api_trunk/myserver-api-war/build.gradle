@@ -9,7 +9,8 @@ dependencies {
  //   compile spec.linkedin.pegasus.restliServer
     compile spec.eclipse.jetty.jettyServer
     compile spec.eclipse.jetty.webServer
-
+    compile spec.springframework.springWeb
+    compile spec.linkedin.pegasus.springBridge
 
     compile project(':myserver-api')
 

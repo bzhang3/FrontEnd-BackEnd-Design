@@ -7,4 +7,5 @@ dependencies{
     compile spec.linkedin.pegasus.r2core
     compile spec.linkedin.pegasus.restliClient
     compile 'com.linkedin.pegasus:restli-server:' + pegasusVersion;
+    compile spec.springframework.springContext
 }

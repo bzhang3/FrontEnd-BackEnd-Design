@@ -2,14 +2,16 @@ package com.bing.myserver.rest.resources;
 
 import com.bing.myserver.rest.services.R2ClientService;
 
-import com.bing.myserver.rest.services.R2ClientServiceFactory;
 import com.linkedin.restli.common.HttpStatus;
 import com.linkedin.restli.server.CreateResponse;
+import com.linkedin.restli.server.RestLiServiceException;
 import com.linkedin.restli.server.UpdateResponse;
 import com.linkedin.restli.server.annotations.RestLiCollection;
 import com.linkedin.restli.server.resources.CollectionResourceTemplate;
 import nam.e.spa.ce.Abc;
-import org.apache.http.HttpResponse;
+
+import javax.inject.Inject;
+import javax.inject.Named;
 
 /**
  * Created by bingzhang on 8/21/17.
@@ -17,18 +19,17 @@ import org.apache.http.HttpResponse;
 @RestLiCollection(name = "abc", namespace = "nam.e.spa.ce")
 public class R2ClientResource extends CollectionResourceTemplate<String, Abc> {
 
-    private R2ClientService _abcService = R2ClientServiceFactory.createInstance();
-
+    // private R2ClientService _abcService = R2ClientServiceFactory.createInstance();
+    @Inject @Named("R2ClientService")
+    private R2ClientService _abcService;
 
     @Override
     public Abc get(String longUrl){
-        Abc res = new Abc();
         try {
-            res = _abcService.get(longUrl);
+            return _abcService.get(longUrl);
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RestLiServiceException(HttpStatus.S_500_INTERNAL_SERVER_ERROR);
         }
-        return res;
     }
 
     // new stuff

@@ -2,7 +2,8 @@ ext.spec = [
         'linkedin' : [
                 'pegasus' : [
                         'r2core' : 'com.linkedin.pegasus:r2:' + pegasusVersion,
-                        'restliClient' : 'com.linkedin.pegasus:restli-client:' + pegasusVersion
+                        'restliClient' : 'com.linkedin.pegasus:restli-client:' + pegasusVersion,
+                        'springBridge' : 'com.linkedin.pegasus:restli-spring-bridge:' + pegasusVersion
                 ]
         ],
         'apache': [
@@ -40,6 +41,11 @@ ext.spec = [
                         'dataTemplate' : 'com.newsoftvalley.myserver:myserver-data-template:' + myserverVersion,
                         'restClient' : 'com.newsoftvalley.myserver:myserver-rest-client:' + myserverVersion
                 ]
+        ],
+        'springframework': [
+                'springWeb' : 'org.springframework:spring-web:' + springVersion,
+                'springContext' : 'org.springframework:spring-context:' + springVersion
+
         ]
 
 
