@@ -18,19 +18,7 @@ public class R2ClientService {
     }
 
     public Abc get(String longUrl) throws Exception{
-        Abc abc = _r2Client.get(longUrl);
-        if(abc == null){
-            abc = calculateAbc(longUrl);
-        }
-        return abc;
-    }
-
-    private Abc calculateAbc(String longUrl){
-        Abc abc = new Abc()
-                .setLongUrl(longUrl)
-                .setShortUrl(new StringBuilder(longUrl).reverse().toString());
-        return abc;
-
+        return _r2Client.get(longUrl);
     }
 
     public CreateResponse create(Abc abc) throws Exception{

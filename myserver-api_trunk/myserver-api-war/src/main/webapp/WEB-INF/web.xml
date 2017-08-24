@@ -6,23 +6,31 @@
     <display-name>Who Cares</display-name>
     <description>It really doesn't matter</description>
 
+    <!-- spring dependency injection -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/beans.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>
+            org.springframework.web.context.ContextLoaderListener
+        </listener-class>
+    </listener>
+
     <!-- servlet definition -->
     <servlet>
-        <servlet-name>UAV</servlet-name>
+        <!-- beans.xml: id="restliRequestHandler" -->
+        <servlet-name>取个名字</servlet-name>
         <servlet-class>
-            com.linkedin.restli.server.RestliServlet
+            org.springframework.web.context.support.HttpRequestHandlerServlet
         </servlet-class>
-        <init-param>
-            <param-name>resourcePackages</param-name>
-            <param-value>com.bing.myserver.rest.resources</param-value>
-        </init-param>
         <load-on-startup>1</load-on-startup>
         <async-supported>true</async-supported>
     </servlet>
 
     <!-- servlet mappings -->
     <servlet-mapping>
-        <servlet-name>UAV</servlet-name>
+        <servlet-name>和上面的名字一样</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
 </web-app>
