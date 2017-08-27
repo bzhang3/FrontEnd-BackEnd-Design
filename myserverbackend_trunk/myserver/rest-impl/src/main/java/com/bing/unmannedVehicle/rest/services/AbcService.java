@@ -16,11 +16,17 @@ public class AbcService {
         _abcDao = abcDao;
     }
 
-    public Abc get(String longUrl){
+    public Abc get(String longUrl)  {
         Abc abc = _abcDao.get(longUrl);
         if(abc == null){
             abc = calculateAbc(longUrl);
         }
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(abc.getLongUrl() + " -> " + abc.getShortUrl());
         return abc;
     }
 
@@ -29,7 +35,6 @@ public class AbcService {
                 .setLongUrl(longUrl)
                 .setShortUrl(new StringBuilder(longUrl).reverse().toString());
         return abc;
-
     }
 
     public CreateResponse create(Abc abc){

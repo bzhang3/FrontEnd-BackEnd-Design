@@ -17,7 +17,7 @@ import com.linkedin.data.template.SetMode;
  * Be nice to write something
  * 
  */
-@Generated(value = "com.linkedin.pegasus.generator.JavaCodeUtil", comments = "Rest.li Data Template. Generated from /Users/bingzhang/SystemDesign/myserverbackend_trunk/myserver/rest-api/src/main/pegasus/nam/e/spa/ce/Xyz.pdsc.", date = "Sat Aug 19 22:44:00 PDT 2017")
+@Generated(value = "com.linkedin.pegasus.generator.JavaCodeUtil", comments = "Rest.li Data Template. Generated from /Users/bingzhang/Desktop/myserverbackend_trunk/myserver/rest-api/src/main/pegasus/nam/e/spa/ce/Xyz.pdsc.", date = "Thu Aug 24 20:10:21 PDT 2017")
 public class Xyz
     extends RecordTemplate
 {
